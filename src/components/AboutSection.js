@@ -1,31 +1,35 @@
 import React from "react";
 import HomeIntro from "../assets/images/photos/hero_intro1.jpg";
+import styled from "styled-components";
+import { About, Description, Image, Hide } from "../styles";
 
 const AboutSection = () => {
   return (
-    <div className="">
-      <div className="description">
+    <About>
+      <Description>
         <div className="title">
-          <div className="hide">
+          <Hide>
             <h2>Be educated so that</h2>
-          </div>
-          <div className="hide">
-            <h2>you can change</h2>
-          </div>
-          <div className="hide">
+          </Hide>
+          <Hide>
+            <h2>
+              you <span>can change</span>
+            </h2>
+          </Hide>
+          <Hide>
             <h2>the world.</h2>
-          </div>
+          </Hide>
         </div>
         <p>
           An educated mind can tech many. An educated mind is better than empty
           one.
         </p>
         <button>About us</button>
-      </div>
-      <div className="image">
+      </Description>
+      <Image>
         <img src={HomeIntro} alt="downloading . . . " />
-      </div>
-    </div>
+      </Image>
+    </About>
   );
 };
 
